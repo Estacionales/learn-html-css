@@ -25,3 +25,7 @@ alt + 마우스 클릭
 ctrl + alt + 방향키
 
 # ▲ _다중 커서_ 찍기
+
+*ctrl + alt + i* = copilot
+
+button.class값 = class 축약

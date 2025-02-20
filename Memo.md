@@ -26,6 +26,8 @@ ctrl + alt + 방향키
 
 # ▲ _다중 커서_ 찍기
 
-*ctrl + alt + i* = copilot
+_ctrl + alt + i_ = copilot
 
 button.class값 = class 축약
+
+CSS 기본 골자 snippets = CSS Template

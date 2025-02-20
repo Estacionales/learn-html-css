@@ -31,3 +31,5 @@ _ctrl + alt + i_ = copilot
 button.class값 = class 축약
 
 CSS 기본 골자 snippets = CSS Template
+
+*alt + z* = px to rem

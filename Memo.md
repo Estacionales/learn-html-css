@@ -32,4 +32,11 @@ button.class값 = class 축약
 
 CSS 기본 골자 snippets = CSS Template
 
-*alt + z* = px to rem
+_alt + z_ = px to rem
+
+div.classname {divname}
+
+@import "/src/common/normalize.css" `노멀라이즈`
+@import "/src/common/modern-reset.css" `모던 리셋`
+@import "/src/common/mini-reset.css" `미니 리셋`
+@import "/src/common/best-reset.css" `베스트 리셋`

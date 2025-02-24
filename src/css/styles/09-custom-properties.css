@@ -28,6 +28,24 @@
   --large: 1.125rem;
 }
 
+.lion {
+  color: red;
+  border: 1px solid green;
+
+  .parent {
+    padding: inherit;
+    margin: 0;
+
+    .child {
+      color: black;
+      border: 1px solid blue;
+      border-color: blue;
+      padding: inherit;
+      display: inline-block;
+    }
+  }
+}
+
 .container {
   /* --text-color: var(--orange); */
   color: var(--text-color);

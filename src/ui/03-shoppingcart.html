@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" />
+    <link rel="stylesheet" href="/src/ui/styles/03-shoppingcart.css" />
+    <title>쇼핑카트 플로트</title>
+  </head>
+  <body>
+    <div class="shopping-cart">
+      <div class="cart-title">
+        <img class="cart-icon" src="/src/assets/svg/shoppingcart.svg" alt="cart-image" />
+        <h1>장바구니</h1>
+      </div>
+
+      <div class="cart-list">
+        <div class="cart-item">
+          <img src="/src/assets/svg/milk.svg" alt="우유" class="item-image">
+          <div class="item-info">
+            <p>1A 우유 900mL</p>
+            <strong>1,870 원</strong>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span>2</span>
+            <button>+</button>
+          </div>
+        </div>
+  
+        <div class="cart-item">
+          <img src="/src/assets/svg/bean sprout.svg" alt="콩나물" class="item-image">
+          <div class="item-info">
+            <p>맛있는 콩나물 500g</p>
+            <strong>1,280 원</strong>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span>2</span>
+            <button>+</button>
+          </div>
+        </div>
+  
+        <div class="cart-item">
+          <img src="/src/assets/svg/tofu.svg" alt="두부" class="item-image">
+          <div class="item-info">
+            <p>고소한 두부 1kg</p>
+            <strong>2,210 원</strong>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="billings">
+        <span>구매 총액 : 8,600원</span>
+      </div>
+    </div>
+  </body>
+</html>

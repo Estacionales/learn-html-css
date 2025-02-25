@@ -40,3 +40,9 @@ div.classname {divname}
 @import "/src/common/modern-reset.css" `모던 리셋`
 @import "/src/common/mini-reset.css" `미니 리셋`
 @import "/src/common/best-reset.css" `베스트 리셋`
+@import "/src/common/reset.css" `에릭 마이어 리셋`
+
+`ctrl + shift + L` = 블록으로 잡은 요소와 같은 요소를 전부 선택
+`ctrl + D` = 밑의 요소를 다중 커서로 선택
+`ctrl + K` = 현재 줄의 요소만 선택 취소
+

@@ -1,0 +1,66 @@
+@import "/src/common/modern-reset.css";
+
+body{
+  font-family: SUIT, sans-serif;
+}
+
+.card{
+  /* BFC - overflow:hidden, display:flow-root, float:left, position:absolute ... */
+  /* background: pink; */
+  /* em은 부모로부터 상속받은 크기인 16px이 기본이지만만, font-size를 주면 그것의 배수이다. */
+  /* rem은 무조건 root(16px)를 기준으로 계산함. */
+  margin: 2em;
+  padding: 2em;
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+
+  &.good-partner{
+    display: flow-root;
+  }
+
+  .subject{
+    /* background: skyblue; */
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    span{
+      vertical-align: top;
+
+      &[lang="en"]{
+        font-size: 0.5em;
+        /* background: yellow; */
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+
+  img{
+    width: 100px;
+  }
+
+
+  .thumbnail{
+    --radius: 50%;
+    
+    border: 1px solid #ccc;
+    float: left;
+    margin: 1em;
+    padding: 0.625em;
+    border-radius: var(--radius);
+    width: 120px;
+    shape-outside: circle(50%);
+
+    img{
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: inherit;
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+
+  .content{
+    margin-top: .625rem;
+  }
+}

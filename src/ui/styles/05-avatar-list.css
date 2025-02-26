@@ -13,6 +13,7 @@
     background: pink;
     font-size: 0;
     padding: 10px;
+    /* margin: 0 auto; = 박스의 가운데로 ul을 옮김 */
     margin: 0 auto;
   }
 

@@ -1,22 +1,22 @@
 /* 기본적으로 적용될 배경색 - blue */
 /* 여기 밑으로 @media로 추가로 조건을 추가해 줌줌 */
 body {
-  background: blue;
-}
-
-/* 뷰포트 크기에 따라 적용될 배경색 - pink */
-@media (min-width: 600px) {
-  body {
+  background: yellow;
+  font-size: 1.5rem;
+  
+  /* 뷰포트 크기에 따라 적용될 배경색 - pink */
+  @media (min-width: 600px) {
     background: pink;
+    font-size: 2rem;
+  }
+  /* 뷰포트 크기에 따라 적용될 배경색 - lime */
+  @media (min-width: 1000px) {
+    background: lime;
+    font-size: 2.5rem;
   }
 }
 
-/* 뷰포트 크기에 따라 적용될 배경색 - lime */
-@media (min-width: 1000px) {
-  body {
-    background: lime;
-  }
-}
+
 
 
 /* orientation=방향. 가로 보기 모드에서 적용될 배경색 - orange */

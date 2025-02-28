@@ -1,0 +1,116 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/a11y.css';
+@import "/src/common/base.css";
+@import "/src/common/theme.css";
+
+body{
+  margin: 50px;
+}
+
+/* 로고 컴포넌트 */
+.brand {
+  /* background: yellow; */
+
+  a.logo{
+    /* background: pink; */
+    display: block;
+/* 
+    &:focus{
+      outline: none; */
+      /* 크기를 늘려서 포커스 됐다는 걸 알리는 대안안 */
+      /* svg{
+        block-size: 2.25rem;
+        inline-size: 2.25rem;
+      } */
+    /* } */
+  }
+}
+
+/* 버튼(circle) 컴포넌트 */
+.button-circle{
+  position: relative;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  border: 0px;
+  border-radius: 50%;
+  /* background: transparent;   */
+  background: #23e97f linear-gradient(180deg, #23e97f 0%, #00dcc9 100%);
+
+  &::after{
+    content: "";
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    inline-size: .5rem;
+    block-size: .5rem;
+    border-radius: 50%;
+    background: #fff;
+  }
+}
+
+/* 입력 서식 컴포넌트 */
+.input{
+  background: yellow;
+  display: flex;
+
+  input{
+    /* inline-size: 100%; */
+    block-size: 1.5rem;
+    border: 1px solid var(--pastel-gray);
+    font-size: .875rem;
+    padding: .125rem .5rem;
+    flex: 1 0 0;
+  }
+}
+
+/* 검색 폼 */
+.form-search{
+  margin-block-start: 20px;
+  fieldset{
+    border: 0;
+  }
+  
+  .search-wrapper{
+    /* background: yellow; */
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+
+    .input{
+      flex: 1 0 0;
+    }
+  }
+}
+
+/* 검색 바 */
+.searchbar{
+  margin-block-start: 20px;
+  /* background: #fff; */
+  display: flex;
+  flex-flow: row nowrap;
+  gap: .75rem;
+  border: 1px solid #03cc5c;
+  border-radius: 3rem;
+  padding: .75rem .75rem .75rem 1.25rem;
+
+  &:focus-within{
+    box-shadow: 0px 4px 4px 0px rgba(68, 131, 63, 0.15);
+  }
+
+  .form-search{
+    margin-block-start: 0;
+    flex: 1 0 0;
+  }
+
+  input{
+    border: 0;
+
+    /* 접근성 차원에선 별로지만, 포커스 시 테두리를 삭제시킴 */
+    &:focus{
+      outline: none;
+      /* 그러나 포커스 시 아웃라인을 없애는 대신 배경색으로 보일 수 있는 것 같은 !대안!이 있을 경우는 사용 가능 */
+      /* background: var(--pastel-gray); */
+    }
+  }
+}

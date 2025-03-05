@@ -1,0 +1,102 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+
+/* .container{
+  display: grid;
+
+  @media (min-width: 800px){
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+
+    .header{
+      grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .navigation{
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .content{
+      grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .sidebar{
+      grid-area: 2 / 3 / 4 / 4;
+    }
+
+    .footer{
+      grid-area: 4 / 1 / 5 / 4;
+    }
+  }
+
+  @media (max-width: 768px){
+
+  }
+} */
+
+
+/* 그리드를 활용한 반응형 레이아웃 */
+/* 그리드 컨테이너 */
+.container{
+  display: grid;
+  padding: 0 20px;
+
+  /* grid item은 order 속성을 이용하여 배치 순서 변경 가능 */
+  /* .navigation{
+    order: 1;
+  } */
+
+  @media (min-width: 768px){
+    grid-template-columns: repeat(12, 1fr);
+    min-width: 800px;
+    margin: 0 auto;
+
+    .header, .navigation, .footer{
+      /* -1은 맨 마지막 번호를 뜻한다. */
+      grid-column: 1 / -1;
+    }
+
+    .content, .sidebar{
+      grid-column: span 6;
+    }
+  }
+
+  @media (min-width: 1024px){
+    max-width: 1280px;
+    .navigation, .sidebar {
+      grid-column: span 3;
+    }
+  }
+}
+
+/* 헤더 */
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
+
+/* 내비게이션 */
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+}
+
+/* 메인 콘텐츠 */
+.content {
+  background: var(--pastel-aqua);
+  height: 40vh;
+}
+
+/* 사이드 바 */
+.sidebar {
+  background: var(--pastel-yellow);
+  height: 25vh;
+}
+
+/* 푸터 */
+.footer {
+  background: var(--pastel-lavender);
+  height: 10vh;
+}

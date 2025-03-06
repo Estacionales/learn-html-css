@@ -1,0 +1,46 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 전체 컨테이너 */
+.select-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid var(--gray-600);
+  cursor: pointer;
+  background-color: #000;
+}
+
+/* 포커스 상태 */
+.select-container:focus-within {
+  outline-color: var(--green);
+}
+
+/* 숨겨진 select와 연결된 label < 안 먹힘?? */
+label {
+  display: contents;
+  cursor: pointer;
+}
+
+/* select 기본 스타일 숨기기 */
+select {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 드롭다운 옵션 스타일 */
+select option {
+  background-color: #fff; 
+  color: #000; 
+}

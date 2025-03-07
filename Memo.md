@@ -46,3 +46,4 @@ div.classname {divname}
 `ctrl + D` = 밑의 요소를 다중 커서로 선택
 `ctrl + K` = 현재 줄의 요소만 선택 취소
 
+`ctrl + alt + z` = join line = 코드 한 줄로 만들기
